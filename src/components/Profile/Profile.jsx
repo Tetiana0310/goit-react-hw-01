@@ -1,4 +1,7 @@
- export default function Profile ({
+
+import css from "../Profile/Profile.module.css"
+
+export default function Profile({
   name,
   tag,
   location,
@@ -6,11 +9,11 @@
   stats: { followers, views, likes },
 }) {
   return (
-    <div>
+    <div className={css.card}>
       {" "}
       <div>
         {" "}
-        <img src={image} alt="User avatar" />
+              <img className={css.img} src={image} alt="User avatar" />
         <p>{name}</p> <p>{tag}</p> <p>{location}</p>{" "}
       </div>{" "}
       <ul>
