@@ -14,9 +14,12 @@ export default function Profile({
       <div>
         {" "}
               <img className={css.img} src={image} alt="User avatar" />
-        <p>{name}</p> <p>{tag}</p> <p>{location}</p>{" "}
+              <p className={css.userName}>{name}</p>
+         <p className={css.textProfile}>{tag}</p> 
+         <p className={css.textProfile}>{location}</p>
+         {" "}
       </div>{" "}
-      <ul>
+      <ul className={css.list}>
         {" "}
         <li>
           <span>Followers</span> <span>{followers}</span>{" "}
