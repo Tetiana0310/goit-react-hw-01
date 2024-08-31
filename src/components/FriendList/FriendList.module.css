@@ -1,7 +1,5 @@
-.item {
-    width: 100px;
-        padding: 10px;
-        border: 1px solid black;
-        border-radius: 4px;
-        text-align: center;
+.list {
+    list-style: none;
+    display: flex;
+    justify-content: center;
 }
